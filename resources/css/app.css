@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+
+}
+
+::selection {
+    color: red !important;
+    background-color: transparent !important;
+}
+
+body::selection {
+    color: red !important;
+    background-color: transparent !important;
+}
+
+.overlay {
+    position: absolute;
+    @apply absolute justify-center items-center w-full h-full top-0 bottom-0;
+    background: #2f2f2f87;
+}
+.btn-sm{
+    @apply px-5 py-2.5 text-sm leading-5 rounded-md font-semibold uppercase
+}
+.btn {
+
+    @apply px-3 py-0.5 text-sm leading-5 rounded-md font-semibold uppercase;
+    display: block;
+}
+.user-card:hover .tools{
+    display: flex;
+}
+.top-right-corner {
+    --shift: 10px;
+    position: absolute;
+    top: var(--shift);
+    right: var(--shift);
+    display: none;
+}
+
+.top-right-corner > * {
+    margin-right: 0.5rem;
+}
+
+.top-right-corner > *:last-of-type {
+    margin: 0;
+}
