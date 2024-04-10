@@ -1,9 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 body {
-
 }
 
 ::selection {
@@ -21,17 +19,29 @@ body::selection {
     @apply absolute justify-center items-center w-full h-full top-0 bottom-0;
     background: #2f2f2f87;
 }
-.btn-sm{
+
+.btn-sm {
     @apply px-5 py-2.5 text-sm leading-5 rounded-md font-semibold uppercase
 }
-.btn {
 
+.btn {
     @apply px-3 py-0.5 text-sm leading-5 rounded-md font-semibold uppercase;
-    display: block;
-}
-.user-card:hover .tools{
     display: flex;
 }
+
+.user-card:hover .tools {
+    display: flex;
+}
+
+.btn svg {
+    height: 20px;
+}
+
+.tools .btn svg {
+    height: 20px;
+    stroke-width: 1.5;
+}
+
 .top-right-corner {
     --shift: 10px;
     position: absolute;

@@ -21,5 +21,6 @@ use Illuminate\Support\Facades\Route;
 Route::post('/user/add', [UserController::class, 'add']);
 Route::post('/user/remove/{id}', [UserController::class, 'remove']);
 Route::get('/user/detail/{id}', [UserController::class, 'detail']);
+Route::post('/user/edit/{id}', [UserController::class, 'edit']);
 //Route::get('/user/list', [UserController::class, 'show']);
 Route::get('/user/list', [UserController::class, 'show']);
